@@ -1,2 +1,0 @@
-# filmopoisk
-Perfect Kinopoisk clone
