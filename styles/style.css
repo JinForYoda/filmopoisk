@@ -1,0 +1,80 @@
+@import url(//db.onlinewebfonts.com/c/a1750a4dae8db954fdd595f313b3b34e?family=Graphik+Kinopoisk+LC+Web+SB);
+@import "http://fonts.fontstorage.com/import/roboto.css";
+@import url(header.css);
+@import url(footer.css);
+@import url(main.css);
+@import url(movieCard.css);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::selection{
+	color: var(--main-color);
+	background-color: var(--add-color);
+	
+}
+
+:root{
+	--main-color: #F7F7F7;
+	--bckg-color:#151515;
+	--card-color:#333333;
+	--add-color: #FF6F25;
+	--text-color:#707070;
+	font-family: 'Roboto';
+	font-size: 1.2rem;
+	font-weight: 350;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text-color)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--add-color);
+}
+
+body{
+	background-color: var(--main-color);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+header{
+	position: fixed;
+}
+main{
+	min-height: calc(100vh - 2rem);
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: auto;
+	grid-auto-flow: row;
+	gap: 1rem;
+	margin-top: 3rem;
+	padding: 2rem;
+	justify-content:space-around;
+	align-items: center;
+	position: relative;
+	
+}
+
+
+.title{
+color:var(--add-color);
+font-size:1.5rem;
+font-weight: 600;
+padding: 0 1rem;
+cursor:default;
+}
+

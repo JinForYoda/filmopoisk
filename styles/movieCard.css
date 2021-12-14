@@ -1,0 +1,133 @@
+.movieCard{
+	
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	margin-top: 1.5rem;
+	backdrop-filter: blur(0.2rem);
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 100ms linear;
+}
+
+.movieCard__main{
+	width: 70%;
+	height: 80%;
+	background-color: var(--card-color);
+	border-radius: 2rem;
+	border: 0.1rem solid var(--add-color);
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.movieCard__main__mainImg{
+	height: 90%;
+	margin-left: 2.5%;
+
+	
+}
+
+.movieCard__main__mainImg-img{
+	height: 100%;
+	border-radius: 2rem;
+	
+}
+
+.movieCard__main__info{
+	display: flex;
+	flex-direction: column;
+	
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	color: var(--main-color);
+	padding: 1rem;
+}
+
+.movieCard__main__info__title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+}
+
+.movieCard__main__info__title-mainTitle{
+	font-weight: 400;
+	color: var(--add-color);
+}
+
+.movieCard__main__info__title-secTitle{
+	font-weight: 200;
+	font-style: italic;
+	font-size: 1.3rem;
+
+}
+
+.movieCard__main__info__title-slogan{
+	margin-top: 1rem;
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.movieCard__main__info__props{
+	height: auto;
+	width: 100%;
+	font-weight: 200;	
+	font-style: italic;
+	color: var(--add-color);
+}
+
+.movieCard__main__info__props >*{
+	display: block;
+}
+
+.movieCard__main__info__discription{
+height: 40%;
+max-height: 40%;
+overflow-y: auto;
+}
+.movieCard__main__info__discription-text{
+	height: 100%;
+	line-height: 1.4rem;
+	text-align: justify;
+	font-weight: 200;
+	padding-right: 1rem;
+}
+
+.movieCard__main-cancel{
+	position: relative;
+
+	display: block;
+	float: right;
+	margin-right: 2rem;
+	margin-top: -29rem;
+	width: 2rem;
+	height: 2rem;
+}
+.movieCard__main-cancel:before{
+	
+   position: absolute;
+ 
+    content: "\00d7"; /* use the hex value here... */
+  font-size: 2rem;
+    color: var(--main-color);
+	width: 100%;
+	height: 100%;
+     left: 50%;
+   top: 50%;
+   transform: translate(-50%,-60%);
+    text-align: center;
+}
+.movieCard__main-cancel:hover:before{
+	color: var(--add-color);
+	cursor: pointer;
+}
+

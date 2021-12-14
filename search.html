@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ФильмоПоиск</title>
+	<link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+	<header>
+		<span class="title">ФильмоПоиск</span>
+		<div class="navigation">
+			<div class="navigation__search">
+				<input type="search" placeholder="Search" class="navigaton__search-input">
+				<a href="search.html">
+					<div class="navigation__search__imgbox"><img src="icons/search-interface-symbol.png"
+							class="navigation__search__imgbox-img"></img></div>
+				</a>
+			</div>
+			<div class="navigation__menu">
+				<ul class="navigation__menu__block">
+					<li class="navigation__menu__block-list"><a href="top.html">Топ-250</a></li>
+					<li class="navigation__menu__block-list"><a href="new.html">Новинки</a></li>
+					<li class="navigation__menu__block-list genre"><a class='' href="#">Жанр</a>
+						<div class="genre__block ">
+							<div class="genre__block__name"><a class="genre__block__name-link "
+									href="genre.html">Комедия</a>
+							</div>
+							<div class="genre__block__name"><a class="genre__block__name-link "
+									href="genre.html">Боевик</a>
+							</div>
+							<div class="genre__block__name"><a class="genre__block__name-link "
+									href="genre.html">Драма</a>
+							</div>
+							<div class="genre__block__name"><a class="genre__block__name-link "
+									href="genre.html">Мелодрама</a>
+							</div>
+							<div class="genre__block__name"><a class="genre__block__name-link "
+									href="genre.html">Детектив</a>
+							</div>
+							<div class="genre__block__name"><a class="genre__block__name-link "
+									href="genre.html">Криминал</a>
+							</div>
+							<div class="genre__block__name"><a class="genre__block__name-link "
+									href="genre.html">Фантастика</a>
+							</div>
+							<div class="genre__block__name"><a class="genre__block__name-link "
+									href="genre.html">Фэнтези</a>
+							</div>
+
+						</div>
+
+					</li>
+					<li class="navigation__menu__block-list"><a href="#">Случайное</a></li>
+					<li class="navigation__menu__block-list"><a href="aboutUs.html">О Нас</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="search">Поиск: <span class="search-text"></span></div>
+	<main>
+
+
+	</main>
+	<footer>
+		<span class="title">ФильмоПоиск</span>
+	</footer>
+	<script src="scripts/getCards__top.js"></script>
+	<script src="scripts/getCards__new.js"></script>
+	<script src="scripts/getMainCard.js"></script>
+	<script src="scripts/random.js"></script>
+	<script src="scripts/search.js"></script>
+	<script src="scripts/get__genre.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>
